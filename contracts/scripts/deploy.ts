@@ -7,10 +7,6 @@ async function main() {
   const token = await Token.deploy(oneToken.mul(1000000));
 
   console.log("token", token.address);
-
-  const Staking = await ethers.getContractFactory("SharkStaking");
-  const staking = await Staking.deploy(token.address);
-  console.log("staking", staking.address);
 }
 
 main()

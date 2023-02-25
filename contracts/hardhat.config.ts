@@ -31,7 +31,7 @@ const config: HardhatUserConfig = {
       chainId: 31337
     },
     bsc_testnet: {
-      url: "https://speedy-nodes-nyc.moralis.io/a21c320a08cac4d00423de90/bsc/testnet",
+      url: secrets.bsc_test,
       accounts: [secrets.privateKey],
       verify: {
         etherscan: {
