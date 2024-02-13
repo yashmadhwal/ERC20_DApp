@@ -89,7 +89,7 @@ _Note_: In this tutorial, we will be working with Binance, therefore the above l
     - To deploy, select `--network` accordingly, e.g. `--network eth_scan`.
 - Once the contract is deployed, you should verify the smart contract, such that interacting with it becomes easy:
     ```
-    npx hardhat etherscan-verify --network bsc_testnet
+    npx hardhat verify ${ADDRESS} --network bsc_testnet
     ```
 ## Running Decentralized Application:
 ### Pre-requisite:
